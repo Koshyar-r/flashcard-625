@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/d51f589380.js"></script>
+    <title>Fluent Flashcard</title>
+</head>
+<body>
+
+    <audio id="car-sound" src="car.mp3"></audio>
+
+    <div class="question-box box" id="question-box">
+        <div class="question-content flex">
+            <img class="img" src="car-pic.jpg" alt="img" draggable="false">
+            <div class="questions flex">
+                <p>املای کلمه متناظر با تصویر را بنویسید</p>
+                <p>تلفظ آن چگونه است؟ آن را با صدای بلند تلفظ کنید</p>
+                <p>اختیاری: فونتیک آن را بنویسید</p>
+            </div>
+
+            <button class="button" id="answer-btn">دیدن جواب</button>
+        </div>
+    </div>
+
+    <div class="answer-box box" id="answer-box">
+        <div class="answer-content flex">
+            <h1 class="word">Car</h1>
+            <img class="img" src="car-pic.jpg" alt="img">
+            <p class="phonetic"><strong>ˈkɑr</strong> :فونتیک کلمه</p>
+            <p class="meaning">ماشین</p>
+            <button class="button sound" id="sound"><i class="fa-solid fa-volume-high"></i> تلفظ کلمه</button>
+
+            <div class="button-group">
+                <button class="button wrong-btn">اشتباه</button>
+                <button class="button hard-btn">سخت</button>
+                <button class="button normal-btn">متوسط</button>
+                <button class="button easy-btn">راحت</button>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
