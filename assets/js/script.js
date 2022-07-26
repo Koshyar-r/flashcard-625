@@ -6,6 +6,7 @@ if(AnswerButton) {
     AnswerButton.addEventListener("click", () => {
         Answer.classList.add("show-answer")
         QuestionBox.style.display = "none"
+        document.getElementById("car-sound").play()
     })
 }
 
